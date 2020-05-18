@@ -140,7 +140,7 @@ p{
 .loginBox
 {
 	position: absolute;
-	top : 60%;
+	top : 80%;
 	left: 30%;
 	transform: translate(-50%, -50%);
 	width: 350px;
