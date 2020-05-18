@@ -4,7 +4,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	border: 10px solid red;
 }
 
 body{
@@ -140,7 +139,7 @@ p{
 .loginBox
 {
 	position: absolute;
-	top : 80%;
+	top : 60%;
 	left: 30%;
 	transform: translate(-50%, -50%);
 	width: 350px;
