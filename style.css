@@ -693,7 +693,7 @@ body{
 
 .card-body{
 	background: rgba(255, 114, 111, 0.5);
-	width: 50%;
+	width: 60%;
 	height: 300px;
 	text-align: center;
 	margin-left: 10%;
@@ -868,7 +868,7 @@ body{
 
 .bottom-box{
 	margin-top: 100px;
-	height: 200px;
+	height: 220px;
 	position: relative;
 	background-color: black;
 	border-radius: 5px;
@@ -904,12 +904,11 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	color: white;
-	bottom: 5;
 	position:relative;
 	margin-left:20;
 	margin-right:15;
-	
 	display:inline-block;
+	margin-bottom: 3px;
 }
 
 .text h3:hover{
@@ -921,6 +920,9 @@ body{
 }
 #wrapper{
 	
-	margin-top: -30;
+	margin-top: -40;
 }
 }
+
+
+
