@@ -33,6 +33,7 @@ body{
 	padding: 10px;
 	size: 10px;
 	width: 30%;
+	filter: brightness(150%);
 	
 }
 
@@ -215,7 +216,7 @@ body{
 	flex-direction:column;
 	align-items:center;
 	box-sizing:border-box;
-	font-size:13px;
+	font-size:15px;
 	line-height:35px;
 }
 
@@ -223,6 +224,11 @@ body{
 	color: #FFFFFF;
 	background-color: #FF555b;
 	line-height:20px;
+}
+
+.price:hover{
+	text-decoration: none;
+	color: black;
 }
 
 .cart{
@@ -286,6 +292,7 @@ body{
 	display:inline-block;
 	
 }
+
 
 .text h3{
 	text-align:left;
@@ -486,8 +493,8 @@ body{
 
 .card-body{
 	background: rgba(255, 114, 111, 0.5);
-	width: 100%;
-	height: auto;
+	width: 80%;
+	height: 300px;
 	text-align: center;
 	margin-left: 30%;
 	z-index: 20;
@@ -549,6 +556,17 @@ body{
 	
 }
 
+.bottom-line h3{
+	font-size: 20px;
+	display: inline-flex;
+	list-style: none;
+	color: #dc4842;
+	position: sticky;
+	color: white;
+	white-space: nowrap;
+}
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -571,8 +589,8 @@ body{
 	
 .card-body{
 	background: rgba(255, 114, 111, 0.5);
-	width: 100%;
-	height: auto;
+	width: 90%;
+	height: 300px;
 	text-align: center;
 	margin-left: 30%;
 	z-index: 20;
@@ -634,7 +652,18 @@ body{
   	margin-left: auto;
   	margin-right: auto;
 	
-}	
+}
+
+.bottom-line h3{
+	font-size: 18px;
+	display: inline-flex;
+	list-style: none;
+	color: #dc4842;
+	position: sticky;
+	color: white;
+	white-space: nowrap;
+}
+	
 }
 
 
@@ -658,15 +687,16 @@ body{
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
+  	filter: brightness(200%);
 	
 }
 
 .card-body{
 	background: rgba(255, 114, 111, 0.5);
-	width: 60%;
-	height: auto;
+	width: 50%;
+	height: 300px;
 	text-align: center;
-	margin-left: 5%;
+	margin-left: 10%;
 	z-index: 20;
 	position: relative;
 	pointer-events: auto;
@@ -674,7 +704,7 @@ body{
 }
 
 .card-body h4{
-	margin-top: 30px;
+	margin-top: 10px;
 	font-size: 2em;
 	font-family: Impact, Charcoal, sans-serif;
 	text-align: center;
@@ -716,13 +746,181 @@ body{
 	color: white;
 	transition: 1s;	
 }
+
+.bottom-line h3{
+	font-size: 15px;
+	display: inline-flex;
+	list-style: none;
+	color: #dc4842;
+	position: sticky;
+	color: white;
+	white-space: nowrap;
+}
+
+.swiper-slide{
+	width: 200px !important;
+	height: 1000px;
+	
 }
 
 
+.swiper-wrapper{
+	height: 300px;
+}
 
 
+.slider-box{
+	margin: 20px;
+	height: 350px;
+	width: 200px;
+	position: relative;
+	background-color:#FFFFFF;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	border: 1px solid rgba(187,187,187,1.00);
+}
+
+.slider-box a{
+	text-decoration: none;
+	text-align: center;
+}
+
+.img-box{
+	height: 130px;
+}
+
+.img-box img{
+	height:auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: -50px;
+}
+
+.time{
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	color: #f16007;
+	font-size: 20px;
+}
+
+.detail{
+	margin-top: -40px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	box-sizing:border-box;
+	font-size:13px;
+	line-height:25px;
+}
 
 
+.price{
+	color: #FFFFFF;
+	background-color: #FF555b;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.price:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.cart{
+	top: 248px;
+	bottom:0px;
+	height:32px;
+	background-color: #ff696e;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.cart a{
+	color: #FFFFFF;
+}
+.cart a:hover{
+	color: #FFFFFF;
+}
+.slider-box:hover{
+	box-shadow:2px 2px 12px rgba(47,47,47,0.40);
+}
+
+.slider-box:hover, .img-box img{
+	transform:scale(1.03);
+	transition:all ease 0.4s;
+	
+}
+
+.cart:hover{
+	transform: scale(1.07);
+	background-color: #fe9048;
+	box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+	transition: all ease 0.1s;
+}
 
 
+.bottom-box{
+	margin-top: 100px;
+	height: 200px;
+	position: relative;
+	background-color: black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align:center;
+	border:1px solid rgba(187,187,187,0.40);
+	opacity: 0.70;
+}
 
+.bottom-box h2{
+	margin-top: 30px;
+	text-align:center;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 2em;
+	color: white;
+	position:relative;
+	display:inline-block;
+	
+}
+
+.text{
+	margin-top: -10px;
+}
+
+.text h3{
+	text-align:left;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: white;
+	bottom: 5;
+	position:relative;
+	margin-left:20;
+	margin-right:15;
+	
+	display:inline-block;
+}
+
+.text h3:hover{
+	cursor: pointer;
+	color: #fff;
+	transform: scale(1.15);
+	transition: 1s;
+	
+}
+#wrapper{
+	
+	margin-top: -30;
+}
+}
